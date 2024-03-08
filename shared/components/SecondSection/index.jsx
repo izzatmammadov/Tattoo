@@ -13,7 +13,7 @@ export const SecondSection = () => {
         <h2 data-aos="fade-down" className="font-amita text-[#dbae01] text-4xl font-bold">
           MEET THE TEAM
         </h2>
-        <p data-aos="fade-up" className="leading-7 font-poppins w-[95%] mx-auto">
+        <p data-aos="fade-down" className="leading-7 font-poppins w-[95%] mx-auto">
           We specialize in many different tattoo genres with each artist staying
           true to their expertise. We are always looking to break boundaries to
           provide you with a truly unique piece. We prefer working with our
@@ -24,7 +24,7 @@ export const SecondSection = () => {
       </div>
 
       <div data-aos="fade-up" className="flex flex-col p-4 sm:p-0 sm:flex-row items-center justify-center gap-12">
-        <div data-aos="fade-right"
+        <div data-aos="fade-up"
           className="w-full sm:w-1/5 cursor-pointer transition-all duration-500 relative"
           onMouseEnter={() => setShowMaga(true)}
           onMouseLeave={() => setShowMaga(false)}
@@ -44,7 +44,7 @@ export const SecondSection = () => {
           )}
         </div>
 
-        <div data-aos="fade-left"
+        <div data-aos="fade-up"
           className="w-full sm:w-1/5 cursor-pointer transition-all duration-500 relative"
           onMouseEnter={() => setShowPako(true)}
           onMouseLeave={() => setShowPako(false)}
