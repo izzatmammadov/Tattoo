@@ -97,7 +97,7 @@ function AboutMuhammedRzayev() {
             className="w-full h-full object-fill grayscale brightness-75"
             width={1000}
             height={0}
-            src={"/maga.png"}
+            src={"/magaa.png"}
             alt="maga"
           />
         </div>
