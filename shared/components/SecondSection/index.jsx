@@ -34,7 +34,7 @@ export const SecondSection = () => {
             className="grayscale hover:scale-105 transition-all duration-500"
             width={1000}
             height={0}
-            src={"/maga.png"}
+            src={"/magaa.png"}
             alt="maga"
           />
           {showMaga && (
@@ -54,7 +54,7 @@ export const SecondSection = () => {
             className="grayscale hover:scale-105 transition-all duration-500"
             width={1000}
             height={0}
-            src={"/pako.png"}
+            src={"/pakoo.png"}
             alt="pako"
           />
           {showPako && (

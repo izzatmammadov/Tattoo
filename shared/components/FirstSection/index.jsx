@@ -4,9 +4,9 @@ import React from "react";
 export const FirstSection = () => {
   return (
     <section className=" bg-[#000] text-white flex flex-col sm:flex-row justify-between py-8 sm:p-16 gap-12 sm:gap-4">
-      <div  className=" font-poppins font-light w-full sm:w-1/2 flex flex-col gap-5">
+      <div  className=" font-poppins font-light w-full sm:w-1/2 flex flex-col px-5 sm:p-0 gap-5">
         <h1 data-aos="fade-down" className="text-4xl text-center font-amita text-[#dbae01] font-bold">
-          TATTOMAG - BAKU, AZERBAIJAN
+          TATTOSHOP - BAKU, AZERBAIJAN
         </h1>
         <p data-aos="fade-down" className="leading-7 text-center sm:text-justify">
           We are located in Baku, Azerbaijan. We are open 7 days a week from
