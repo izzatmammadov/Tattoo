@@ -1,0 +1,14 @@
+.header {
+    background-image: url("../../../public/studiotattoo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    filter: grayscale(100%);
+    filter: brightness(45%);
+    position: absolute;
+    inset: 0;
+    z-index: -99;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
