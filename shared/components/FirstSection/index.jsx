@@ -4,7 +4,7 @@ import React from "react";
 export const FirstSection = () => {
   return (
     <section className=" bg-[#000] text-white flex flex-col sm:flex-row justify-between py-8 sm:p-16 gap-12 sm:gap-4">
-      <div  className=" font-poppins font-light w-full sm:w-1/2 flex flex-col px-5 sm:p-0 gap-5">
+      <div  className=" font-poppins font-light w-full sm:w-1/2 flex flex-col px-4 sm:p-0 gap-5">
         <h1 data-aos="fade-down" className="text-4xl text-center font-amita text-[#dbae01] font-bold">
           TATTOSHOP - BAKU, AZERBAIJAN
         </h1>
