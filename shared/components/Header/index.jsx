@@ -16,8 +16,8 @@ export const Header = () => {
         return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">About</h1>;
         case "/tattoo":
         return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">Tattoo</h1>;
-        case "/artists":
-          return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">Artists</h1>;
+        case "/prices":
+          return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">Prices</h1>;
           case "/contact":
         return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">Contact</h1>;
         case "/faq":

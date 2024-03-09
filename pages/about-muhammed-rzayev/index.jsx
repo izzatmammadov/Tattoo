@@ -1,5 +1,6 @@
 import { Footer } from "@/shared/components/Footer";
 import { Header } from "@/shared/components/Header";
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
@@ -8,12 +9,17 @@ function AboutMuhammedRzayev() {
   const router = useRouter();
   return (
     <>
+    <Head>
+        <title>Muhammed Rzayev</title>
+        <meta name="description" content="This is a description of my page" />
+        <link rel="icon" href="/dragon.jpg" />
+      </Head>
       <Header />
       <section className="flex flex-col sm:flex-row sm:h-[600px] bg-[#212121]">
         <div className="w-full sm:w-[50%] flex flex-col p-5 justify-center items-center gap-4">
           <p
             data-aos="zoom-in"
-            className="font-amita text-[#dbae01] text-center text-4xl"
+            className="font-amita text-[#dbae01] text-center text-[32px] sm:text-4xl"
           >
             Muhammed Rzayev
           </p>

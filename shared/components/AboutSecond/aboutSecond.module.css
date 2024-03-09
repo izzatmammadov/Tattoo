@@ -1,9 +1,7 @@
-.header {
-    background-image: url("../../../public/studiotattoo.jpg");
+.poster {
+    background-image: url("../../../public/rose_bg.jpg");
     background-position: center;
     background-size: cover;
-    height: 80vh;
-    filter: brightness(45%);
     position: absolute;
     inset: 0;
     z-index: -99;

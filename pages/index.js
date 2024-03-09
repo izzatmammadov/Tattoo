@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>TATTOMAG | Home</title>
+        <title>TATTOSHOP | Home</title>
         <meta name="description" content="This is a description of my page" />
         <link rel="icon" href="/dragon.jpg" />
       </Head>

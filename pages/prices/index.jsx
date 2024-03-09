@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import React from 'react'
 
-function Faq(){
+function Prices(){
   return (
     <>
     <Head>
-        <title>TATTOSHOP | FAQ</title>
+        <title>TATTOSHOP | Prices</title>
         <meta name="description" content="This is a description of my page" />
         <link rel="icon" href="/dragon.jpg" />
       </Head>
-    Faq</>
+    Prices</>
   )
 }
 
-export default Faq
+export default Prices

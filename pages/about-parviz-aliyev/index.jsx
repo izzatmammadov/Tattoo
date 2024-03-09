@@ -1,13 +1,20 @@
 import { Footer } from "@/shared/components/Footer";
 import { Header } from "@/shared/components/Header";
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 
-function AboutMuhammedRzayev() {
+function AboutParvizAliyev() {
   const router = useRouter();
   return (
     <>
+    <Head>
+        <title>Parviz Aliyev</title>
+        <meta name="description" content="This is a description of my page" />
+        <link rel="icon" href="/dragon.jpg" />
+      </Head>
+
       <Header />
       <section className="flex flex-col sm:flex-row-reverse sm:h-[600px] bg-[#212121]">
         <div className="w-full sm:w-[50%] flex flex-col p-5 justify-center items-center gap-4">
@@ -105,4 +112,4 @@ function AboutMuhammedRzayev() {
   );
 }
 
-export default AboutMuhammedRzayev;
+export default AboutParvizAliyev;

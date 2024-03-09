@@ -1,10 +1,17 @@
 import { Footer } from "@/shared/components/Footer";
 import { Header } from "@/shared/components/Header";
+import Head from "next/head";
 import React from "react";
 
 function Aftercare() {
   return (
     <>
+  <Head>
+        <title>TATTOSHOP | Aftercare</title>
+        <meta name="description" content="This is a description of my page" />
+        <link rel="icon" href="/dragon.jpg" />
+      </Head>
+
     <Header/>
     <div className="leading-7 text-white bg-[#212121] text-center sm:text-justify flex flex-col gap-10 text-lg p-10">
     <p data-aos="fade-up">
