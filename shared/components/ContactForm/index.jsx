@@ -48,7 +48,7 @@ export const ContactForm = () => {
       return;
     }
 
-    const whatsappNumber = "+994503882464"
+    const whatsappNumber = "+994558390077"
     const whatsappMessage = `Yeni Mesaj!\n\nAd: ${formData.fullname}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\nMesaj: ${formData.message}`;
 
     console.log(whatsappMessage);
