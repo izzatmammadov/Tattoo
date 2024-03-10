@@ -6,7 +6,6 @@
     filter: brightness(45%);
     position: absolute;
     inset: 0;
-    z-index: -99;
     display: flex;
     justify-content: center;
     align-items: end;

@@ -7,7 +7,7 @@ export const SecondSection = () => {
   const router = useRouter()
 
   return (
-    <section className="bg-[#212121] text-white flex flex-col gap-12 py-8 sm:p-16">
+    <section className="bg-[#0a0a0a] text-[#e7e7e7] flex flex-col gap-12 py-8 sm:p-16">
       <div  className="text-center flex flex-col items-center justify-center gap-12">
         <h2 data-aos="fade-down" className="font-amita text-[#dbae01] text-4xl font-bold">
           MEET THE ARTIST
@@ -24,20 +24,20 @@ export const SecondSection = () => {
 
       <div data-aos="fade-up" className="flex flex-col p-4 sm:p-0 sm:flex-row items-center justify-center gap-12">
         <div data-aos="fade-up"
-          className="w-full sm:w-1/5 cursor-pointer transition-all duration-500 relative"
+          className="w-full sm:w-1/4 cursor-pointer transition-all duration-500 relative"
           onMouseEnter={() => setShowMaga(true)}
           onMouseLeave={() => setShowMaga(false)}
           onClick={()=>router.push("/about-muhammed-rzayev")}
         >
           <Image
-            className="grayscale hover:scale-105 transition-all duration-500"
+            className="grayscale rounded-sm"
             width={1000}
             height={0}
             src={"/magaa.png"}
             alt="maga"
           />
           {showMaga && (
-            <p className="absolute font-poppins text-xl inset-0 flex items-center justify-center bg-black bg-opacity-15 text-white">
+            <p className="absolute font-poppins text-xl inset-0 flex items-center justify-center bg-black bg-opacity-15 text-[#e7e7e7]">
               Muhammed Rzayev
             </p>
           )}

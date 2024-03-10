@@ -5,7 +5,7 @@ export const AboutSecond = () => {
   return (
     <section className="h-[890px] relative">
       <div className={`${style.poster} h-full`}>
-        <div className="flex flex-col justify-center m-auto h-full items-center backdrop-blur-sm text-white text-center gap-6 p-5 sm:px-0">
+        <div className="flex flex-col justify-center m-auto h-full items-center backdrop-blur-sm text-[#e7e7e7] text-center gap-6 p-5 sm:px-0">
           <p
             data-aos="fade-down"
             className="font-amita text-[#dbae01] w-[95%] text-4xl sm:w-full sm:text-5xl mb-10"

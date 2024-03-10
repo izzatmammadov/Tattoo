@@ -15,11 +15,11 @@ function Contact() {
       </Head>
 
       <Header />
-      <section className="bg-[#212121] flex flex-col sm:flex-row justify-center gap-20 sm:gap-10 p-5 sm:p-10">
-        <ContactForm/>
-        <ContactFind/>
+      <section className="bg-[#0a0a0a] flex flex-col sm:flex-row justify-center gap-20 sm:gap-10 p-5 sm:p-10">
+        <ContactForm />
+        <ContactFind />
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }

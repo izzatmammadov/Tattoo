@@ -13,8 +13,8 @@ function Aftercare() {
       </Head>
 
       <Header />
-      <div className="leading-7 text-white bg-[#212121] text-center sm:text-justify font-poppins flex flex-col gap-10 text-lg p-5 sm:p-10">
-        <p data-aos="fade-up">
+      <div className="leading-7 text-[#e7e7e7] bg-[#0a0a0a] text-center sm:text-justify font-poppins flex flex-col gap-10 p-5 sm:p-10">
+        <p className="text-center" data-aos="fade-up">
           The aftercare of your tattoo is just as important, if not more
           important, than getting the actual tattoo. Please keep in mind that
           tattoos are not permanent until they have fully healed. This means
@@ -23,7 +23,7 @@ function Aftercare() {
           aftercare steps in order for the tattoo to come out perfect.
         </p>
 
-        <p data-aos="fade-up">
+        <p className="text-center" data-aos="fade-up">
           There are a few common misconceptions and mistakes that are often
           heard. The first is not washing the area of a tattoo for an extended
           period of time while using lotion over the tattoo. Lotions do work
@@ -34,7 +34,7 @@ function Aftercare() {
           reapply the lotion rather than leaving it on for a long time.
         </p>
 
-        <p data-aos="fade-up">
+        <p className="text-center" data-aos="fade-up">
           When washing the area, make sure you don’t submerge the tattoo under
           water. This means no diving into pools either! When you clean the
           area, use a damp clean cloth, and pat it around the area. Be sure to
@@ -42,7 +42,7 @@ function Aftercare() {
           fragrance free lotions and soaps as it may irritate the skin.
         </p>
 
-        <p data-aos="fade-up">
+        <p className="text-center" data-aos="fade-up">
           Another thing you want to avoid is direct sunlight after a fresh
           tattoo. If you’re planning on getting a tattoo and you’re leaving off
           to Cancun the next day or it’s a hot summer day out, keep that tattoo
@@ -51,7 +51,7 @@ function Aftercare() {
           hurt.
         </p>
 
-        <p data-aos="fade-up">
+        <p className="text-center" data-aos="fade-up">
           If you have any questions about the aftercare of the tattoo, it’s
           essential that you contact us. We want to make sure that you have the
           best looking tattoo possible. As tattoo artists, we can give you the
