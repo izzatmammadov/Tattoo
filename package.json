@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "i18next": "^23.10.1",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "sweetalert2": "^11.10.6"
+    "react-i18next": "^14.1.0",
+    "sweetalert2": "^11.10.6",
+    "swiper": "^11.0.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

@@ -2,8 +2,11 @@ import styles from "./header.module.css";
 import { Navbar } from "../Navbar";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
+import { Language } from "../Language";
 
 export const Header = () => {
+  const { t } = useTranslation();
   const router = useRouter();
 
   const getContent = () => {
@@ -12,50 +15,50 @@ export const Header = () => {
     switch (pathname) {
       case "/":
         return (
-          <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">
-            Home
+          <h1 className="font-amita text-5xl text-white backdrop-blur-sm p-2">
+            {t("nav1")}
           </h1>
         );
       case "/about":
         return (
-          <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">
-            About
+          <h1 className="font-amita text-5xl text-white backdrop-blur-sm p-2">
+            {t("nav2")}
           </h1>
         );
       case "/store":
         return (
-          <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">
+          <h1 className="font-amita text-5xl text-white backdrop-blur-sm p-2">
             Store
           </h1>
         );
       case "/prices":
         return (
-          <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">
+          <h1 className="font-amita text-5xl text-white backdrop-blur-sm p-2">
             Prices
           </h1>
         );
       case "/contact":
         return (
-          <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">
-            Contact
+          <h1 className="font-amita text-5xl text-white backdrop-blur-sm p-2">
+            {t("nav3")}
           </h1>
         );
       case "/faq":
         return (
-          <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">
-            FAQ
+          <h1 className="font-amita text-5xl text-white backdrop-blur-sm p-2">
+            {t("nav5")}
           </h1>
         );
       case "/aftercare":
         return (
-          <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">
-            Aftercare
+          <h1 className="font-amita text-5xl text-white backdrop-blur-sm p-2">
+            {t("nav4")}
           </h1>
         );
       case "/about-muhammed-rzayev":
         return (
-          <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">
-            ARTIST
+          <h1 className="font-amita text-5xl text-white backdrop-blur-sm p-2">
+            {t("nav6")}
           </h1>
         );
     }
@@ -69,15 +72,16 @@ export const Header = () => {
           data-aos="zoom-in"
         >
           {getContent()}
+          <Language />
           <Image
-            className="mt-auto mb-auto cursor-pointer hover:scale-105 transition-all duration-300"
+            className="my-auto cursor-pointer hover:scale-110 transition-all duration-300"
             width={50}
             height={0}
             src={"/downfill.png"}
             alt="down"
             onClick={() => {
               window.scrollBy({
-                top: 400,
+                top: 460,
               });
             }}
           />

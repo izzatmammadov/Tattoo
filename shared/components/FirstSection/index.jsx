@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const FirstSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-[#000] text-[#e7e7e7] flex flex-col sm:flex-row justify-between py-8 sm:p-16 gap-12 sm:gap-4">
       <div className="font-poppins font-light w-full sm:w-1/2 flex flex-col px-4 sm:p-0 gap-5">
@@ -9,16 +12,13 @@ export const FirstSection = () => {
           data-aos="fade-down"
           className="text-4xl text-center font-amita text-[#dbae01] font-bold"
         >
-          TATTOSHOP - BAKU, AZERBAIJAN
+          {t("home1")}
         </h1>
         <p
           data-aos="fade-down"
           className="leading-7 text-center sm:text-justify"
         >
-          We are located in Baku, Azerbaijan. We are open 7 days a week from
-          12PM – 1AM. You can make an appointment through our form below or by
-          calling{" "}
-          <a
+          {t("home2")} <br /> <a
             className="text-[#dbae01]"
             target="_blank"
             href="https://wa.me/+994558390077"
@@ -29,21 +29,12 @@ export const FirstSection = () => {
         </p>
         <p data-aos="fade-up" className="leading-7 text-center sm:text-justify">
           <mark className=" bg-[#dbae01] text-white">
-            The shop is owned by Muhammed Rzayev.
+          {t("home3")}
           </mark>{" "}
-          Maga is a highly acclaimed tattoo artist, and he is one of Baku's very
-          own. The entire team is dedicated to always growing with the tattoo
-          industry, embracing new techniques, and offering both full color and
-          grey colors tattoos.
+          {t("home4")}
         </p>
         <p data-aos="fade-up" className="leading-7 text-center sm:text-justify">
-          Our shop is an extension of who we are. Our work ethic and integrity
-          have been ingrained here. We strive to create a welcoming atmosphere
-          for ourselves as well as our clients. Each staff member has their own
-          private station to ensure comfort and privacy. We keep our shop
-          immaculate and take pride in maintaining a safe and sanitary
-          environment. Our goal is to always have all clients walk out with a
-          piece of art on their body that they will love for life.
+        {t("home5")}
         </p>
       </div>
 

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 
 export const SecondSection = () => {
+  const { t } = useTranslation();
   const [showMaga, setShowMaga] = useState(false);
   const router = useRouter()
 
@@ -10,16 +12,12 @@ export const SecondSection = () => {
     <section className="bg-[#0a0a0a] text-[#e7e7e7] flex flex-col gap-12 py-8 sm:p-16">
       <div  className="text-center flex flex-col items-center justify-center gap-12">
         <h2 data-aos="fade-down" className="font-amita text-[#dbae01] text-4xl font-bold">
-          MEET THE ARTIST
+        {t("home6")}
         </h2>
         <p data-aos="fade-down" className="leading-7 font-poppins w-[95%] mx-auto">
-          We specialize in many different tattoo genres with each artist staying
-          true to their expertise. We are always looking to break boundaries to
-          provide you with a truly unique piece. We prefer working with our
-          clients and collaborate on new ideas, or adding to existing ones, to
-          achieve a finished product that leaves everyone satisfied. Our
-          greatest reward is to leave you feeling proud with your new work.
+        {t("home7")}
         </p>
+        <p data-aos="fade-down"  className="font-poppins text-[#dbae01]">{t("home8")}</p>
       </div>
 
       <div data-aos="fade-up" className="flex flex-col p-4 sm:p-0 sm:flex-row items-center justify-center gap-12">
@@ -38,7 +36,7 @@ export const SecondSection = () => {
           />
           {showMaga && (
             <p className="absolute font-poppins text-xl inset-0 flex items-center justify-center bg-black bg-opacity-15 text-[#e7e7e7]">
-              Muhammed Rzayev
+              {t("name")}
             </p>
           )}
         </div>

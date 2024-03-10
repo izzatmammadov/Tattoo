@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+  const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
 
@@ -15,10 +17,10 @@ export const Navbar = () => {
       <nav data-aos="zoom-in" className="fixed z-50 w-full font-amita hidden sm:flex justify-center items-center gap-5 text-[#dbae01] backdrop-blur-md font-bold text-2xl">
         <ul className="flex gap-8">
           <li onClick={()=>router.push("/")} className={`cursor-pointer hover:text-[#7a1622] duration-300 transition-all ${router.pathname === "/" && "text-[#7a1622]"}`}>
-            HOME
+            {t("nav1")}
           </li>
           <li onClick={()=>router.push("/about")} className={`cursor-pointer hover:text-[#7a1622] duration-300 transition-all ${router.pathname === "/about" && "text-[#7a1622]"}`}>
-            ABOUT US
+          {t("nav2")}
           </li>
           {/* <li onClick={()=>router.push("/store")} className={`cursor-pointer hover:text-[#7a1622] duration-300 transition-all ${router.pathname === "/store" && "text-[#7a1622]"}`}>
             STORE
@@ -34,10 +36,10 @@ export const Navbar = () => {
             PRICES
           </li> */}
           <li onClick={()=>router.push("/contact")} className={`cursor-pointer hover:text-[#7a1622] duration-300 transition-all ${router.pathname === "/contact" && "text-[#7a1622]"}`}>
-            CONTACT
+          {t("nav3")}
           </li>
           <li onClick={()=>router.push("/faq")} className={`cursor-pointer hover:text-[#7a1622] duration-300 transition-all ${router.pathname === "/faq" && "text-[#7a1622]"}`}>
-            FAQ
+          {t("nav5")}
           </li>
         </ul>
       </nav>
@@ -63,13 +65,13 @@ export const Navbar = () => {
           <div className="bg-black bg-opacity-50 p-4 w-full h-full">
             <button className="text-[#7a1622] text-4xl mx-auto block" onClick={toggleMenu}>&#10005;</button>
             <ul className="text-white font-amita text-4xl flex flex-col gap-6 mt-10 justify-center font-bold items-center">
-              <li data-aos="fade-left" data-aos-duration="1000" onClick={()=>router.push("/")} className={`${router.pathname === "/" && "text-white border-b-4 border-[#7a1622]"}`}>HOME</li>
-              <li data-aos="fade-left" data-aos-duration="1200" onClick={()=>router.push("/about")} className={`${router.pathname === "/about" && "text-white border-b-4 border-[#7a1622]"}`}>ABOUT US</li>
+              <li data-aos="fade-left" data-aos-duration="1000" onClick={()=>router.push("/")} className={`${router.pathname === "/" && "text-white border-b-4 border-[#7a1622]"}`}>{t("nav1")}</li>
+              <li data-aos="fade-left" data-aos-duration="1200" onClick={()=>router.push("/about")} className={`${router.pathname === "/about" && "text-white border-b-4 border-[#7a1622]"}`}>{t("nav2")}</li>
               {/* <li data-aos="fade-left" data-aos-duration="1200" onClick={()=>router.push("/store")} className={`${router.pathname === "/store" && "text-white border-b-4 border-[#7a1622]"}`}>STORE</li> */}
               {/* <li data-aos="fade-left" data-aos-duration="1300" onClick={()=>router.push("/prices")} className={`${router.pathname === "/prices" && "text-white border-b-4 border-[#7a1622]"}`}>PRICES</li> */}
-              <li data-aos="fade-left" data-aos-duration="1400" onClick={()=>router.push("/aftercare")} className={`${router.pathname === "/aftercare" && "text-white border-b-4 border-[#7a1622]"}`}>AFTERCARE</li>
-              <li data-aos="fade-left" data-aos-duration="1600" onClick={()=>router.push("/contact")} className={`${router.pathname === "/contact" && "text-white border-b-4 border-[#7a1622]"}`}>CONTACT</li>
-              <li data-aos="fade-left" data-aos-duration="1800" onClick={()=>router.push("/faq")} className={`${router.pathname === "/faq" && "text-white border-b-4 border-[#7a1622]"}`}>FAQ</li>
+              <li data-aos="fade-left" data-aos-duration="1600" onClick={()=>router.push("/contact")} className={`${router.pathname === "/contact" && "text-white border-b-4 border-[#7a1622]"}`}>{t("nav3")}</li>
+              <li data-aos="fade-left" data-aos-duration="1400" onClick={()=>router.push("/aftercare")} className={`${router.pathname === "/aftercare" && "text-white border-b-4 border-[#7a1622]"}`}>{t("nav4")}</li>
+              <li data-aos="fade-left" data-aos-duration="1800" onClick={()=>router.push("/faq")} className={`${router.pathname === "/faq" && "text-white border-b-4 border-[#7a1622]"}`}>{t("nav5")}</li>
             </ul>
           </div>
         </div>
