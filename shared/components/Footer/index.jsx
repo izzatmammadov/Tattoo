@@ -41,7 +41,7 @@ export const Footer = () => {
             className="w-[30px] h-[30px] hover:scale-95 transition-all duration-300 cursor-pointer"
             width={1000}
             height={0}
-            src={"/instagram.png"}
+            src={"/instagram_icon.png"}
             alt="instagram"
           />
         </a>
