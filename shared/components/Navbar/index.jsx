@@ -20,8 +20,8 @@ export const Navbar = () => {
           <li onClick={()=>router.push("/about")} className={`cursor-pointer hover:text-[#7a1622] duration-300 transition-all ${router.pathname === "/about" && "text-[#7a1622]"}`}>
             ABOUT US
           </li>
-          <li onClick={()=>router.push("/tattoo")} className={`cursor-pointer hover:text-[#7a1622] duration-300 transition-all ${router.pathname === "/tattoo" && "text-[#7a1622]"}`}>
-            TATTOO
+          <li onClick={()=>router.push("/store")} className={`cursor-pointer hover:text-[#7a1622] duration-300 transition-all ${router.pathname === "/store" && "text-[#7a1622]"}`}>
+            STORE
           </li>
         </ul>
 
@@ -65,7 +65,7 @@ export const Navbar = () => {
             <ul className="text-white font-amita text-4xl flex flex-col gap-6 mt-10 justify-center font-bold items-center">
               <li data-aos="fade-left" data-aos-duration="1000" onClick={()=>router.push("/")} className={`${router.pathname === "/" && "text-white border-b-4 border-[#7a1622]"}`}>HOME</li>
               <li data-aos="fade-left" data-aos-duration="1100" onClick={()=>router.push("/about")} className={`${router.pathname === "/about" && "text-white border-b-4 border-[#7a1622]"}`}>ABOUT US</li>
-              <li data-aos="fade-left" data-aos-duration="1200" onClick={()=>router.push("/tattoo")} className={`${router.pathname === "/tattoo" && "text-white border-b-4 border-[#7a1622]"}`}>TATTOO</li>
+              <li data-aos="fade-left" data-aos-duration="1200" onClick={()=>router.push("/store")} className={`${router.pathname === "/store" && "text-white border-b-4 border-[#7a1622]"}`}>STORE</li>
               <li data-aos="fade-left" data-aos-duration="1300" onClick={()=>router.push("/prices")} className={`${router.pathname === "/prices" && "text-white border-b-4 border-[#7a1622]"}`}>PRICES</li>
               <li data-aos="fade-left" data-aos-duration="1400" onClick={()=>router.push("/contact")} className={`${router.pathname === "/contact" && "text-white border-b-4 border-[#7a1622]"}`}>CONTACT</li>
               <li data-aos="fade-left" data-aos-duration="1500" onClick={()=>router.push("/faq")} className={`${router.pathname === "/faq" && "text-white border-b-4 border-[#7a1622]"}`}>FAQ</li>

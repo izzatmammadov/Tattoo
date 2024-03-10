@@ -1,6 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    fullname: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // FormData'nın içindeki değerleri kullanarak bir WhatsApp mesajı oluştur
+    const whatsappMessage = `Yeni Mesaj!\nAd: ${formData.fullname}\nEmail: ${formData.email}\nTelefon: ${formData.phone}\nMesaj: ${formData.message}`;
+    // Oluşturulan mesajı konsola göster
+    console.log(whatsappMessage);
+    // Form değerlerini sıfırla
+    setFormData({
+      fullname: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
+  };
+
   return (
     <div className="flex flex-col text-white w-full sm:w-1/2 gap-10 sm:gap-5">
           <div data-aos="fade-down" className="flex flex-col text-center sm:text-start gap-5">
@@ -12,12 +42,14 @@ export const ContactForm = () => {
             </p>
           </div>
 
-          <form data-aos="fade-up" className="flex flex-col gap-5">
+          <form data-aos="fade-up" className="flex flex-col gap-5" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-2 font-light">
               <label className="font-poppins">Your Fullname</label>
               <input
                 className="bg-[#ccc] outline-none rounded-sm p-2 text-black font-medium font-poppins capitalize"
                 type="text"
+                value={formData.fullname}
+            onChange={handleChange}
               />
             </div>
 
@@ -26,6 +58,8 @@ export const ContactForm = () => {
               <input
                 className="bg-[#ccc]  outline-none rounded-sm text-black font-medium font-poppins p-2"
                 type="email"
+                value={formData.email}
+            onChange={handleChange}
               />
             </div>
 
@@ -34,6 +68,8 @@ export const ContactForm = () => {
               <input
                 className="bg-[#ccc]  outline-none rounded-sm text-black font-medium font-poppins p-2"
                 type="text"
+                value={formData.phone}
+            onChange={handleChange}
               />
             </div>
 
@@ -42,6 +78,8 @@ export const ContactForm = () => {
               <textarea
                 className="bg-[#ccc]  outline-none rounded-sm text-black font-medium font-poppins p-2"
                 rows={5}
+                value={formData.message}
+            onChange={handleChange}
               ></textarea>
             </div>
 

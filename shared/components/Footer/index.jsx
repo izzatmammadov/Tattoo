@@ -70,7 +70,7 @@ export const Footer = () => {
       </ul>
 
       <div className="text-center font-medium text-white font-poppins text-[14px]">
-        © 2018 All right reserved
+        © 2024 All right reserved
       </div>
     </footer>
   );

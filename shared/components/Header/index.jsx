@@ -14,8 +14,8 @@ export const Header = () => {
         return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">Home</h1>;
       case "/about":
         return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">About</h1>;
-        case "/tattoo":
-        return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">Tattoo</h1>;
+        case "/store":
+        return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">Store</h1>;
         case "/prices":
           return <h1 className="font-amita text-6xl text-white backdrop-blur-sm p-2">Prices</h1>;
           case "/contact":
@@ -28,7 +28,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="h-[80vh]">
+    <header className="h-[100vh]">
         <div className={`${styles.header}`}>
           <div className="h-1/2 flex flex-col justify-center items-center" data-aos="zoom-in">
           {getContent()}

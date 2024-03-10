@@ -1,3 +1,5 @@
+import { Footer } from '@/shared/components/Footer'
+import { Header } from '@/shared/components/Header'
 import Head from 'next/head'
 import React from 'react'
 
@@ -9,7 +11,10 @@ function Prices(){
         <meta name="description" content="This is a description of my page" />
         <link rel="icon" href="/dragon.jpg" />
       </Head>
-    Prices</>
+    
+    <Header/>
+    <Footer/>
+    </>
   )
 }
 

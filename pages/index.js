@@ -5,6 +5,7 @@ import { SecondSection } from "@/shared/components/SecondSection";
 import { Footer } from "@/shared/components/Footer";
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -12,8 +13,7 @@ export default function Home() {
         <meta name="description" content="This is a description of my page" />
         <link rel="icon" href="/dragon.jpg" />
       </Head>
-
-        <Header />
+        <Header/>
         <FirstSection/>
         <SecondSection/>
         <Footer/>
