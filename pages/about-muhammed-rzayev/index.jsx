@@ -67,7 +67,7 @@ function AboutMuhammedRzayev() {
               <Image
                 width={30}
                 height={0}
-                src={"/instagramm.png"}
+                src={"/instagram_icon.png"}
                 alt="instagram"
               />
               <a
