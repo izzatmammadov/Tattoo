@@ -7,7 +7,7 @@
 
 @keyframes bounce {
     0% {
-        transform: scale(0px);
+        transform: translateY(0px);
     }
 
     100% {
