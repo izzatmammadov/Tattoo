@@ -6,8 +6,8 @@ export const FirstSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-[#000] text-[#e7e7e7] flex flex-col sm:flex-row justify-between py-8 sm:p-16 gap-12 sm:gap-4">
-      <div className="font-poppins font-light w-full sm:w-1/2 flex flex-col px-4 sm:p-0 gap-5">
+    <section className="bg-[#000] text-[#e7e7e7] flex flex-col sm:flex-row justify-between py-8 px-5 sm:p-16 gap-12 sm:gap-4">
+      <div className="font-poppins font-light w-full sm:w-1/2 flex flex-col gap-5">
         <h1
           data-aos="fade-down"
           className="text-4xl text-center font-amita text-[#dbae01] font-bold"
@@ -18,7 +18,7 @@ export const FirstSection = () => {
           data-aos="fade-down"
           className="leading-7 text-center sm:text-justify"
         >
-          {t("home2")} <br /> <a
+          {t("home2")} <br/> <a
             className="text-[#dbae01]"
             target="_blank"
             href="https://wa.me/+994558390077"
@@ -40,7 +40,7 @@ export const FirstSection = () => {
 
       <div data-aos="fade-up" className="w-full sm:w-1/2">
         <Image
-          className=" brightness-75 w-3/4 rounded-full mx-auto"
+          className=" brightness-75 w-full sm:w-3/4 rounded-full mx-auto"
           width={1000}
           height={0}
           src={"/dragon.jpg"}

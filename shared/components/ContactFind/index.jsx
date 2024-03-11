@@ -34,7 +34,7 @@ export const ContactFind = () => {
                 />
                 <p className="text-4xl font-amita ">{t("contact10")}</p>
               </div>
-              <p className='font-poppins'>9RFR+92J, Mardanov brothers, Baku 1005</p>
+              <p className='font-poppins mt-2'>9RFR+92J, Mardanov brothers, Baku 1005</p>
             </div>
 
             <div data-aos="fade-up" className="flex-col text-[#e7e7e7] text-center sm:text-start">
@@ -42,7 +42,7 @@ export const ContactFind = () => {
                 <Image width={30} height={0} src={"/phone.png"} alt="phone" />
                 <p className="text-4xl font-amita ">{t("contact5")}</p>
               </div>
-              <p className='font-poppins'>(+994) 55 839 00 77</p>
+              <p className='font-poppins mt-2'>(+994) 55 839 00 77</p>
             </div>
 
             <div data-aos="fade-up" className="flex-col text-[#e7e7e7] text-center sm:text-start">
@@ -50,7 +50,7 @@ export const ContactFind = () => {
                 <Image width={30} height={0} src={"/mail.png"} alt="mail" />
                 <p className="text-4xl font-amita ">{t("contact11")}</p>
               </div>
-              <p className='font-poppins'>rzayevm507@gmail.com</p>
+              <p className='font-poppins mt-2'>rzayevm507@gmail.com</p>
             </div>
           </div>
         </div>

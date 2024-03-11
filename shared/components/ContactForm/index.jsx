@@ -132,7 +132,7 @@ export const ContactForm = () => {
           ></textarea>
         </div>
 
-        <button className="bg-[#dbae01] w-full font-light mt-10 sm:w-max text-[#e7e7e7] hover:bg-[#7a1622] transition-all duration-300 p-4 rounded-sm font-poppins">
+        <button className="bg-[#dbae01] w-full text-xl font-light mt-10 sm:w-max text-[#e7e7e7] hover:bg-[#7a1622] transition-all duration-300 p-4 rounded-sm font-poppins">
         {t("contact7")}
         </button>
       </form>
