@@ -7,9 +7,8 @@ export const Footer = () => {
   const { t } = useTranslation();
   const router = useRouter();
   return (
-    <footer className="w-full bg-black flex flex-col gap-12 py-8 sm:py-20">
+    <footer data-aos="zoom-in" className="w-full bg-black flex flex-col gap-12 py-8 sm:py-20">
       <div
-        data-aos="zoom-in"
         className="flex items-center gap-6 justify-center"
       >
         <a
@@ -48,7 +47,6 @@ export const Footer = () => {
       </div>
 
       <ul
-        data-aos="zoom-in"
         className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-12 font-poppins text-xl text-[#888]"
       >
         <li

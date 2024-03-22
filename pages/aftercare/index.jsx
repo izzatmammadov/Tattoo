@@ -15,7 +15,7 @@ function Aftercare() {
       </Head>
 
       <Header />
-      <div className="leading-7 text-[#e7e7e7] bg-[#0a0a0a] text-center sm:text-justify font-poppins flex flex-col gap-10 p-5 sm:p-10">
+      <div className="leading-7 text-[#e7e7e7] bg-[#0a0a0a] text-center sm:text-justify font-poppins flex flex-col gap-4 sm:gap-10 p-5 sm:p-10">
         <p className="text-center" data-aos="fade-up">
           {t("aftercare1")}
         </p>
